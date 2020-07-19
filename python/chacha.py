@@ -17,4 +17,4 @@ with open(sys.argv[1], "rb") as f_input:
     ciphertext = cipher.encrypt(plaintext)
     f_output.write(ciphertext)
 
-print("Nonce = " + base64.b64encode(cipher.nonce).decode
+print("Nonce = " + base64.b64encode(cipher.nonce).decode())
