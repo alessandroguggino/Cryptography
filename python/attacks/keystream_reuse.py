@@ -62,7 +62,7 @@ counter = numpy.zeros(256, dtype=int)
 
 for ks_byte_candidate in range(0, 256):
     for c in ciphertexts:
-        if chr(c[0] ^ ks_byte_candidate) in printable:
+        if chr(c[1] ^ ks_byte_candidate) in printable:
             counter[ks_byte_candidate] += 1
 
 #print(counter)
